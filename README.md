@@ -1,4 +1,4 @@
-# Analiza podatkov s programom R, 2019/20
+# Analiza življenjske ravni v Sloveniji
 
 Repozitorij z gradivi pri predmetu APPR v študijskem letu 2019/20
 
@@ -7,8 +7,21 @@ Repozitorij z gradivi pri predmetu APPR v študijskem letu 2019/20
 
 ## Tematika projekta
 
-Izbrali si boste temo, s katero se bo vaš projekt ukvarjal.
-Tukaj boste napisali, kje ste dobili podatke, ter kakšen je vaš cilj.
+Analizirala bom kako so povezane spremenljivke: dostopnost izbranih dobrin, splošno zadovoljstvo z življenjem in splošno zdravstveno stanje. Podatke bom gledala po starosti in po dohodku gospodinjstva. Na koncu bom skušala ugotoviti, če obstaja povezava med splošnim zadovoljstvom z življenjem in izobrazbo po statističnih regijah Slovenije.
+Podatke bom črpala iz [Eurostata](https://ec.europa.eu/eurostat/data/database)
+
+### Tabele:
+
+* `1.tabela` : bo vsebovala podatke glede na starost. Analizirala bom pri kateri starosti je razmerje med zadovoljstvom z življenjem, dostopnostjo dobrin in zdravstvenim stanjem najbolj optimalno. 
+Vhodne tabele, ki jih bom združila v to tabelo, bodo v obliki HTML.
+
+*`2.tabela` : bo vsebovala podatke glede na dohodek gospodinjstva. Analizirala bom kako dohodek vpliva na zadovoljstvo z življenjem in zdravtsveno stanje.
+Vhodne tabele, ki jih bom združila v to tabelo, bodo v obliki XLSX.
+
+*`3.tabela` : bo vsebovala podatke po statističnih regijah. Analizirala bom kako izobrazba vpliva na zadovoljstvo z življenjem. 
+Vhodne tabele, ki jih bom združila v to tabelo, bodo v obliki CSV.
+
+
 
 ## Program
 
