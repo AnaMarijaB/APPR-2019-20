@@ -8,7 +8,7 @@ Repozitorij z gradivi pri predmetu APPR v študijskem letu 2019/20
 ## Tematika projekta
 
 Analizirala bom kako so povezane spremenljivke: dostopnost izbranih dobrin, splošno zadovoljstvo z življenjem in splošno zdravstveno stanje. Podatke bom gledala po starosti in po dohodku gospodinjstva. Na koncu bom skušala ugotoviti, če obstaja povezava med splošnim zadovoljstvom z življenjem in izobrazbo po statističnih regijah Slovenije.
-Podatke bom črpala iz [Eurostata](https://ec.europa.eu/eurostat/data/database)
+Podatke bom črpala iz [Sursa](https://pxweb.stat.si/SiStat)
 
 ### Tabele:
 
