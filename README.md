@@ -15,12 +15,14 @@ Podatke bom črpala iz [Eurostata](https://ec.europa.eu/eurostat/data/database)
 * `1.tabela` : bo vsebovala podatke glede na starost. Analizirala bom pri kateri starosti je razmerje med zadovoljstvom z življenjem, dostopnostjo dobrin in zdravstvenim stanjem najbolj optimalno. 
 Vhodne tabele, ki jih bom združila v to tabelo, bodo v obliki HTML.
 
-*`2.tabela` : bo vsebovala podatke glede na dohodek gospodinjstva. Analizirala bom kako dohodek vpliva na zadovoljstvo z življenjem in zdravtsveno stanje.
+* `2.tabela` : bo vsebovala podatke glede na dohodek gospodinjstva. Analizirala bom kako dohodek vpliva na zadovoljstvo z življenjem in zdravtsveno stanje.
 Vhodne tabele, ki jih bom združila v to tabelo, bodo v obliki XLSX.
 
-*`3.tabela` : bo vsebovala podatke po statističnih regijah. Analizirala bom kako izobrazba vpliva na zadovoljstvo z življenjem. 
+* `3.tabela` : bo vsebovala podatke po statističnih regijah. Analizirala bom kako izobrazba vpliva na zadovoljstvo z življenjem. 
 Vhodne tabele, ki jih bom združila v to tabelo, bodo v obliki CSV.
 
+Vse tabele, ki jih bo združevala vsebujejo podatke za 100 ljudi na spremenljivko. 
+Edino v zadnji tabeli ima izobrazba po regijah podatke za število ljudi v regiji za posamezno stopnjo izobrazbe.
 
 
 ## Program
