@@ -2,54 +2,71 @@
 
 sl <- locale("sl", decimal_mark=",", grouping_mark=".")
 
-# Funkcija, ki uvozi občine iz Wikipedije
-uvozi.obcine <- function() {
-  link <- "http://sl.wikipedia.org/wiki/Seznam_ob%C4%8Din_v_Sloveniji"
-  stran <- html_session(link) %>% read_html()
-  tabela <- stran %>% html_nodes(xpath="//table[@class='wikitable sortable']") %>%
-    .[[1]] %>% html_table(dec=",")
-  for (i in 1:ncol(tabela)) {
-    if (is.character(tabela[[i]])) {
-      Encoding(tabela[[i]]) <- "UTF-8"
-    }
-  }
-  colnames(tabela) <- c("obcina", "povrsina", "prebivalci", "gostota", "naselja",
-                        "ustanovitev", "pokrajina", "regija", "odcepitev")
-  tabela$obcina <- gsub("Slovenskih", "Slov.", tabela$obcina)
-  tabela$obcina[tabela$obcina == "Kanal ob Soči"] <- "Kanal"
-  tabela$obcina[tabela$obcina == "Loški potok"] <- "Loški Potok"
-  for (col in c("povrsina", "prebivalci", "gostota", "naselja", "ustanovitev")) {
-    if (is.character(tabela[[col]])) {
-      tabela[[col]] <- parse_number(tabela[[col]], na="-", locale=sl)
-    }
-  }
-  for (col in c("obcina", "pokrajina", "regija")) {
-    tabela[[col]] <- factor(tabela[[col]])
-  }
-  return(tabela)
+#Funkcija za uvoz csv splošno zadovoljstvo z življenjem po regijah
+
+uvozi.zadovoljstvo.REGIJE <- function() {
+  zadovoljstvo.REGIJE <- read_csv2("podatki/splosno_zadovoljstvo_z_zivljenjem_PO_REGIJAH.csv", skip=2, na=c("", "..."),
+                                locale=locale(encoding="Windows-1250"))
+  colnames(zadovoljstvo.REGIJE) <- c('REGIJA', 'SAMOOCENA',2012:2018)
+  return(zadovoljstvo.REGIJE)
 }
 
-# Funkcija, ki uvozi podatke iz datoteke druzine.csv
-uvozi.druzine <- function(obcine) {
-  data <- read_csv2("podatki/druzine.csv", col_names=c("obcina", 1:4),
-                    locale=locale(encoding="CP1250"))
-  data$obcina <- data$obcina %>% strapplyc("^([^/]*)") %>% unlist() %>%
-    strapplyc("([^ ]+)") %>% sapply(paste, collapse=" ") %>% unlist()
-  data$obcina[data$obcina == "Sveti Jurij"] <- "Sveti Jurij ob Ščavnici"
-  data <- data %>% gather(`1`:`4`, key="velikost.druzine", value="stevilo.druzin")
-  data$velikost.druzine <- parse_number(data$velikost.druzine)
-  data$obcina <- parse_factor(data$obcina, levels=obcine)
-  return(data)
+
+#Funkcija za uvoz csv izobrazba po regijah
+
+uvozi.izobrazba.REGIJE <- function() {
+  izobrazba.REGIJE <- read_csv2("podatki/izobrazba_PO_REGIJAH.csv", skip=2,
+                                locale=locale(encoding='Windows-1250'))
+  colnames(izobrazba.REGIJE) <- c('REGIJA','IZOBRAZBA','STATUS','SPOL', 2011:2018)
+  izobrazba.REGIJE$STATUS <- NULL
+  return(izobrazba.REGIJE)
 }
 
-# Zapišimo podatke v razpredelnico obcine
-obcine <- uvozi.obcine()
 
-# Zapišimo podatke v razpredelnico druzine.
-druzine <- uvozi.druzine(levels(obcine$obcina))
+#Funkcija za uvoz xls dostopnost dobrin po dohodnku
 
-# Če bi imeli več funkcij za uvoz in nekaterih npr. še ne bi
-# potrebovali v 3. fazi, bi bilo smiselno funkcije dati v svojo
-# datoteko, tukaj pa bi klicali tiste, ki jih potrebujemo v
-# 2. fazi. Seveda bi morali ustrezno datoteko uvoziti v prihodnjih
-# fazah.
+uvozi.dobrine.DOHODEK <- function() {
+  dobrine.DOHODEK <- read_xlsx("podatki/dostopnost_izbranih_dobrin_DOHODEK.xlsx", skip=2)
+  colnames(dobrine.DOHODEK) <- c('SPOL','KVINTIL','DOBRINA','MERITVE', 2014:2018)
+  return(dobrine.DOHODEK)
+}
+
+
+#Funkcija za uvoz xls splošno zadovoljstvo z življenjem po dohodku
+
+uvozi.zadovoljstvo.DOHODEK <- function() {
+  zadovoljstvo.DOHODEK <- read_xlsx("podatki/splosno_zadovoljstvo_z_zivljenjem_DOHODEK.xlsx", skip=2)
+  colnames(zadovoljstvo.DOHODEK) <- c('SAMOOCENA','REGIJA','SPOL','KVINTIL', 2012:2018)
+  zadovoljstvo.DOHODEK$REGIJA <- NULL
+  return(zadovoljstvo.DOHODEK)
+}
+
+#Funkcija za uvoz xls splošno zdravstveno stanje po dohodku
+
+uvozi.zdravje.DOHODEK <- function() {
+  zdravje.DOHODEK <- read_xlsx("podatki/splosno_zdravstveno_stanje_DOHODEK.xlsx", skip=2)
+  colnames(zdravje.DOHODEK) <- c('KVINTIL','STANJE',2005:2018)
+  return(zdravje.DOHODEK)
+}
+
+#Funkcija za uvoz html dostopnost dobrin po starosti
+
+uvozi.dobrine.STAROST <- function() {
+  link <- 'C:/Users/Ana/Documents/APPR-2019-20/podatki/dostopnost_izbranih_dobrin_STAROST.htm'
+  stran <- read_html(link)
+  dobrine.STAROST <- stran %>% html_nodes(xpath="//table") %>% html_table() %>% fill
+  return(dobrine.STAROST)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
