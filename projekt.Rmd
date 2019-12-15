@@ -1,6 +1,6 @@
 ---
-title: "Poročilo pri predmetu Analiza podatkov s programom R"
-author: "Študent FMF"
+title: "Analiza življenjske ravni v Sloveniji"
+author: "Ana Marija Belingar"
 output:
   html_document: default
   pdf_document:
@@ -26,9 +26,14 @@ source("lib/rstudio.r", encoding="UTF-8")
 
 # Izbira teme
 
-Za vzorec bomo prikazali nekaj podatkov o slovenskih občinah.
+Analizirala bom podatke od leta 2013 do 2018. Podatke sem pobrala iz [Sursa](https://pxweb.stat.si/SiStat). 
 
-![](slike/grb.png)
+* PO REGIJAH: Zanima me kako je povezana izobrazba s splošnim zadovoljstvom ljudi po Sloveniji.
+* PO DOHODKU: Zanima me kako je povezano zdravsveno stanje s splošnim zadovoljstvom ljudi, glede na dohodek gospodinjstev.
+* PO STAROSTI: Zanima me kako je povezano zdravsveno stanje s splošnim zadovoljstvom ljudi, glede na starost prebivalstva.
+
+
+![](slike/slika.jpg)
 
 ***
 
@@ -38,73 +43,72 @@ Za vzorec bomo prikazali nekaj podatkov o slovenskih občinah.
 source("uvoz/uvoz.r", encoding="UTF-8")
 ```
 
-Uvozili smo podatke o občinah v obliki CSV s statističnega urada ter v obliki HTML
-z Wikipedije. Podatke imamo v dveh razpredelnicah v obliki *tidy data*.
+Podatke sem uvozila v obliki CSV iz Statističnega urada.
+Podatke imam v šestih razpredelnicah v obliki *tidy data*.
 
-1. `druzine` - podatki o družinah za vsako občino
-  - `obcina` - spremenljivka: ime občine (neurejen faktor),
-  - `velikost.druzine` - spremenljivka: število otrok v družini (število: 1, 2, 3 ali 4, kjer zadnja vrednost pomeni 4 ali več),
-  - `stevilo.druzin` - meritev: število družin z ustreznim številom otrok v ustrezni občini (število).
+REGIJE: 
 
-2. `obcine` - podatki o občinah
-  - `obcina` - spremenljivka: ime občine (neurejen faktor),
-  - `povrsina` - meritev: površina občine v km$^2$ (število),
-  - `prebivalci` - meritev: prebivalstvo občine (število),
-  - `gostota` - meritev: število prebivalcev na km$^2$ (število),
-  - `naselja` - meritev: število naselij v občini (število),
-  - `ustanovitev` - meritev: leto ustanovitve občine (število),
-  - `pokrajina` - meritev: pokrajina, ki ji občina pripada (neurejen faktor),
-  - `regija` - meritev: regija, ki ji občina pripada (neurejen faktor),
-  - `odcepitev` - meritev: podatki o občinah, od katerih se je občina odcepila (besedilo).
+1.ZADOVOLJSTVO: Surova tabela vsebuje podatke za 100 ljudi in sicer:
+  - `Regija` - podatki o regijah
+  - `Samoocena` - spremenljivka: stopnja zadovoljstva, ocenjena s točkami od 1 do 10 ali neznano
+  - `leto` - spremenljivka: pove nam v katerem letu opazujemo,
 
-**Opomba**: da bi razpredelnica `obcine` res bila v obliki *tidy data*, bi morali odstraniti stolpec `gostota` (saj je izpeljan iz stolpcev `povrsina` in `prebivalci`), podatke o pokrajinah pa bi morali premakniti v drugo razpredelnico, saj nekatere občine pripadajo dvema pokrajinama. Podobno bi morali narediti tudi s stolpcem `odcepitev`.
+  Tebelo sem prečistila tako, da vsebuje podatke za osebe, ki so zadovoljne vsaj 7 ali več
 
-Spodnji graf prikazuje porazdelitev števila naselij v občinah.
+2. IZOBRAZBA: Surova tabela vsebuje podatke za celotno Slovenijo in sicer:
+  - `Regija` - podatki o regijah
+  - `Izobrazba` - spremenljivka: naziv stopnje izbrazbe,
+  - `Spol` - spremenljivka: moški ali ženski, 
+  - `leto` - spremenljivka: pove nam v katerem letu opazujemo
+  
+  Tabelo sem prečistila tako, da vsebuje podatke za osebe, ki imajo vsaj visokošolsko stopnjo izobrazbe ali več.
 
-```{r histogram, echo=FALSE, message=FALSE, fig.align='center', fig.cap='Histogram števila naselij v občinah'}
-ggplot(obcine, aes(x=naselja)) + geom_histogram() +
-  ggtitle("Pogostost števila naselij") + xlab("Število naselij") + ylab("Število občin")
-```
+Predpostavljam, da večja kot je izobraženost ljudi v posamezni regiji, večje zadovoljstvo je prisotno.ž
 
-***
+DOHODEK:
 
-# Analiza in vizualizacija podatkov
+3. ZADOVOLJSTVO: Surova tabela vsebuje podatke za 100 ljudi in sicer:
+  - `Regija` - SLOVENIJA (stolpec v analizi izbrišem)
+  - `Spol` - spremenljivka: moški ali ženski
+  - `Dohodek` - izražen v kvintilih (1. kvintil, ...)
+  - `Samoocena` - spremenljivka: stopnja zadovoljstva, ocenjena s točkami od 1 do 10 ali neznano
+  - `leto` - spremenljivka: pove nam v katerem letu opazujemo
 
-```{r vizualizacija, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
-source("vizualizacija/vizualizacija.r", encoding="UTF-8")
-```
+  Tebelo sem prečistila tako, da vsebuje podatke za osebe, ki so zadovoljne vsaj 7 ali več
 
-Spodnji zemljevid prikazuje povprečno velikost družine za vsako občino.
+4. ZDRAVSTVENO STANJE: Surova tabela vsebuje podatke za 100 ljudi in sicer:
+  - `Dohodek` - izražen v kvintilih (1. kvintil, ...)
+  - `Zdravstvo` - spremenljivka: ocena zdravstvenega stanje (od zelo slabe do zelo dobre)
+  - `leto` - spremenljivka: pove nam v katerem letu opazujemo
+ 
+  Tabelo sem prečistila tako, da vsebuje število oseb, ki so označili svoje zdravstveno stanje kot zelo dobro.
 
-```{r zemljevid, echo=FALSE, fig.align='center', fig.cap='Zemljevid povprečnega števila otrok v družini'}
-ggplot() + geom_polygon(data=left_join(zemljevid, povprecja, by=c("OB_UIME"="obcina")),
-                        aes(x=long, y=lat, group=group, fill=povprecje)) +
-  ggtitle("Povprečno število otrok v družini") + xlab("") + ylab("") +
-  guides(fill=guide_colorbar(title="Povprečje"))
-```
+Predpostavljam, da večji dohodek vpliva na večje zadovoljstvo ljudi in boljše zdravstveno stanje.
 
-***
+STAROST:
 
-# Napredna analiza podatkov
+3. ZADOVOLJSTVO: Surova tabela vsebuje podatke za 100 ljudi in sicer:
+  - `Starost` - podatki o starosti (od 16 do 66 in več let)
+  - `Spol` - spremenljivka: moški ali ženski
+  - `Samoocena` - spremenljivka: stopnja zadovoljstva, ocenjena s točkami od 1 do 10 ali neznano
+  - `leto` - spremenljivka: pove nam v katerem letu opazujemo
 
-```{r analiza, echo=FALSE, message=FALSE}
-source("analiza/analiza.r", encoding="UTF-8")
-```
+  Tebelo sem prečistila tako, da vsebuje podatke za osebe, ki so zadovoljne vsaj 7 ali več
 
-Spodnji graf prikazuje povezavo med številom naselij in površino občine.
+4. ZDRAVSTVENO STANJE: Surova tabela vsebuje podatke za 100 ljudi in sicer:
+  - `Starost` - podatki o starosti (od 16 do 66 in več let)
+  - `Zdravstvo` - spremenljivka: ocena zdravstvenega stanje (od zelo slabe do zelo dobre)
+  - `leto` - spremenljivka: pove nam v katerem letu opazujemo
+ 
+  Tabelo sem prečistila tako, da vsebuje število oseb, ki so označili svoje zdravstveno stanje kot zelo dobro.
 
-```{r graf, echo=FALSE, fig.align='center', fig.cap='Povezava med številom naselij in površino občine'}
-ggplot(inner_join(obcine, data.frame(obcina=names(skupine),
-                                     skupina=factor(skupine)), by="obcina")
-, aes(x=povrsina, y=naselja, color=skupina, size=prebivalci/1000)) + geom_point() +
-  ggtitle("Število naselij glede na površino občine") +
-  xlab(expression("Površina (km"^2 * ")")) + ylab("Št. naselij") +
-  guides(color=guide_legend(title="Skupina"),
-         size=guide_legend(title="Prebivalci (* 1000)"))
-```
+Predpostavljam, da manjša starost vpliva na večje zadovoljstvo ljudi in boljše zdravstveno stanje.
 
-***
 
-```{r shiny, echo=FALSE}
-shinyAppDir("shiny", options=list(width="100%", height=600))
-```
+Spodnji graf prikazuje povprečno zadovoljstvo ljudi po regijah.
+
+<!-- ```{r histogram, echo=FALSE, message=FALSE, fig.align='center', fig.cap='Histogram števila naselij v občinah'} -->
+<!-- ggplot(obcine, aes(x=naselja)) + geom_histogram() + -->
+<!--   ggtitle("Pogostost števila naselij") + xlab("Število naselij") + ylab("Število občin") -->
+<!-- ``` -->
+

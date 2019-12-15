@@ -8,15 +8,15 @@ uvozi.zadovoljstvo.REGIJE <- function() {
   zadovoljstvo.REGIJE <- read_csv2("podatki/splosno_zadovoljstvo_z_zivljenjem_PO_REGIJAH.csv", skip=2, na=c("", "..."),
                                 locale=locale(encoding="Windows-1250"))
   colnames(zadovoljstvo.REGIJE) <- c('REGIJA', 'SAMOOCENA',2012:2018)
-  
+
   ocena <- c("4","6","8","10","neznano")
   imena <- c("0-4 (%)", "5-6 (%)", "7-8 (%)", "9-10 (%)", "Neznano (%)")
   tab2 <- data.frame(samoocena=ocena, ime=imena, stringsAsFactors = FALSE)
-  
+
   zadovoljstvo.REGIJE <- zadovoljstvo.REGIJE %>% inner_join(tab2, c("SAMOOCENA"="ime")) %>%
     filter(samoocena == 8 | samoocena == 10) %>%
     select(REGIJA, '2013', '2014', '2015', '2016', '2017', '2018', samoocena)
-  
+
   return(zadovoljstvo.REGIJE)
 }
 
