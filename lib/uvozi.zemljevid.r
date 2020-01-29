@@ -29,7 +29,7 @@ library(mosaic)
 # Vrača:
 #   * zemljevid (SpatialPolygonsDataFrame) iz pobranega arhiva
 uvozi.zemljevid <- function(url, ime.zemljevida, pot.zemljevida="",
-                            mapa="../zemljevidi", encoding=NULL, force=FALSE) {
+                            mapa="../zemljevidi", encoding="UTF-8", force=FALSE) {
   zgostitev <- digest(url, algo="sha1")
   map <- paste0(mapa, "/", zgostitev)
   pot <- paste0(map, "/", pot.zemljevida)

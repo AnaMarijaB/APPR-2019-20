@@ -7,7 +7,7 @@ output:
     includes:
       in_header: lib/styles.sty
     latex_engine: xelatex
-runtime: shiny
+#runtime: shiny
 ---
 
 ```{r setup, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
@@ -28,7 +28,7 @@ source("lib/rstudio.r", encoding="UTF-8")
 
 Analizirala bom podatke od leta 2013 do 2018. Podatke sem pobrala iz [Sursa](https://pxweb.stat.si/SiStat). 
 
-* PO REGIJAH: Zanima me kako je povezana izobrazba s splošnim zadovoljstvom ljudi po Sloveniji.
+* PO REGIJAH: Zanima me kako je povezana izobrazba s splošnim zadovoljstvom ljudi v Sloveniji.
 * PO DOHODKU: Zanima me kako je povezano zdravsveno stanje s splošnim zadovoljstvom ljudi, glede na dohodek gospodinjstev.
 * PO STAROSTI: Zanima me kako je povezano zdravsveno stanje s splošnim zadovoljstvom ljudi, glede na starost prebivalstva.
 
@@ -63,7 +63,7 @@ REGIJE:
   
   Tabelo sem prečistila tako, da vsebuje podatke za osebe, ki imajo vsaj visokošolsko stopnjo izobrazbe ali več.
 
-Predpostavljam, da večja kot je izobraženost ljudi v posamezni regiji, večje zadovoljstvo je prisotno.ž
+Predpostavljam, da večja kot je izobraženost ljudi v posamezni regiji, večje zadovoljstvo je prisotno.
 
 DOHODEK:
 
@@ -105,10 +105,21 @@ STAROST:
 Predpostavljam, da manjša starost vpliva na večje zadovoljstvo ljudi in boljše zdravstveno stanje.
 
 
-Spodnji graf prikazuje povprečno zadovoljstvo ljudi po regijah.
+Spodnji zemljevid prikazuje povprečno zadovoljstvo ljudi po regijah.
 
-<!-- ```{r histogram, echo=FALSE, message=FALSE, fig.align='center', fig.cap='Histogram števila naselij v občinah'} -->
-<!-- ggplot(obcine, aes(x=naselja)) + geom_histogram() + -->
-<!--   ggtitle("Pogostost števila naselij") + xlab("Število naselij") + ylab("Število občin") -->
-<!-- ``` -->
 
+```{r zemljevid, echo=FALSE, fig.align='left'}
+
+zemljevid.zadovoljstvo
+
+zemljevid.izobrazba
+
+```
+
+```{r graf_sreca, echo=FALSE, fig.align='left'}
+
+graf_sreca
+
+graf_zdravje
+
+```

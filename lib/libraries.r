@@ -6,6 +6,14 @@ library(shiny)
 library(readr)
 library(readxl)
 library(mosaic)
+library(dplyr)
+library(rgdal)
+library(rgeos)
+library(maptools)
+library(tmap)
+library(plotly)
+
+
 
 
 # Uvozimo funkcije za pobiranje in uvoz zemljevida.

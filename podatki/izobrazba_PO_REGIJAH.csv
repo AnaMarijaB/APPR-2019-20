@@ -1,243 +1,123 @@
 "Prebivalstvo, staro 15 ali veè let, po statusu aktivnosti, spolu in izobrazbi, statistiène regije, Slovenija, letno"
 
-"STATISTIÈNA REGIJA";"IZOBRAZBA";"STATUS AKTIVNOSTI";"SPOL";"2011";"2012";"2013";"2014";"2015";"2016";"2017";"2018"
-"Pomurska";"Osnovnošolska ali manj - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Moški";15978;15340;14766;14281;13837;13387;12926;12503
-"Pomurska";"Osnovnošolska ali manj - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";23612;22963;22148;21525;20817;20200;19564;18952
-"Pomurska";"Brez izobrazbe, nepopolna osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Moški";1909;1803;1656;1585;1533;1481;1421;1377
-"Pomurska";"Brez izobrazbe, nepopolna osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";2263;2149;2027;1936;1867;1794;1725;1628
-"Pomurska";"Osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Moški";14069;13537;13110;12696;12304;11906;11505;11126
-"Pomurska";"Osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";21349;20814;20121;19589;18950;18406;17839;17324
-"Pomurska";"Srednješolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Moški";28626;28952;29138;28966;29137;29190;29029;29045
-"Pomurska";"Srednješolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";22581;22454;22453;22128;22143;22051;21893;21918
-"Pomurska";"Nižja poklicna, srednja poklicna";"Prebivalci stari 15+ let - SKUPAJ";"Moški";14799;14901;14845;14779;14863;14824;14642;14545
-"Pomurska";"Nižja poklicna, srednja poklicna";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";9168;9014;8961;8940;8962;8889;8884;8898
-"Pomurska";"Srednja strokovna, srednja splošna";"Prebivalci stari 15+ let - SKUPAJ";"Moški";13827;14051;14293;14187;14274;14366;14387;14500
-"Pomurska";"Srednja strokovna, srednja splošna";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";13413;13440;13492;13188;13181;13162;13009;13020
-"Pomurska";"Višješolska, visokošolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Moški";5543;5938;6057;6355;6546;6764;7062;7149
-"Pomurska";"Višješolska, visokošolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";7129;7812;8017;8480;8817;9192;9754;9925
-"Pomurska";"Visokošolska 1. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Moški";2862;2883;2980;3257;3407;3556;3705;3763
-"Pomurska";"Visokošolska 1. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";3942;3926;4066;4430;4636;4830;5070;5183
-"Pomurska";"Visokošolska 2. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Moški";2353;2692;2708;2703;2731;2788;2892;2911
-"Pomurska";"Visokošolska 2. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";2938;3571;3625;3695;3811;3983;4234;4278
-"Pomurska";"Visokošolska 3. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Moški";328;363;369;395;408;420;465;475
-"Pomurska";"Visokošolska 3. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";249;315;326;355;370;379;450;464
-"Podravska";"Osnovnošolska ali manj - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Moški";32355;30517;29270;28360;27180;26053;25268;24533
-"Podravska";"Osnovnošolska ali manj - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";47561;46301;44927;43708;42554;41107;39878;38694
-"Podravska";"Brez izobrazbe, nepopolna osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Moški";4881;4509;4110;3859;3658;3468;3330;3173
-"Podravska";"Brez izobrazbe, nepopolna osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";6984;6702;6299;6033;5773;5518;5275;5021
-"Podravska";"Osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Moški";27474;26008;25160;24501;23522;22585;21938;21360
-"Podravska";"Osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";40577;39599;38628;37675;36781;35589;34603;33673
-"Podravska";"Srednješolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Moški";86672;87265;87830;87786;88167;88256;87775;88247
-"Podravska";"Srednješolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";70558;69670;69312;68104;67777;67447;66583;66398
-"Podravska";"Nižja poklicna, srednja poklicna";"Prebivalci stari 15+ let - SKUPAJ";"Moški";43343;43194;43047;43051;42965;42737;42369;42341
-"Podravska";"Nižja poklicna, srednja poklicna";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";25228;24931;24638;24323;24151;24040;23905;23870
-"Podravska";"Srednja strokovna, srednja splošna";"Prebivalci stari 15+ let - SKUPAJ";"Moški";43329;44071;44783;44735;45202;45519;45406;45906
-"Podravska";"Srednja strokovna, srednja splošna";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";45330;44739;44674;43781;43626;43407;42678;42528
-"Podravska";"Višješolska, visokošolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Moški";18776;20253;20891;22095;22736;23449;24438;24903
-"Podravska";"Višješolska, visokošolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";25080;27323;28412;30405;31555;32611;34140;34969
-"Podravska";"Visokošolska 1. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Moški";8755;8927;9477;10479;10945;11452;11887;12178
-"Podravska";"Visokošolska 1. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";12690;12938;13759;15262;15930;16462;17054;17485
-"Podravska";"Visokošolska 2. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Moški";8417;9489;9562;9660;9779;9912;10276;10406
-"Podravska";"Visokošolska 2. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";11211;12909;13151;13534;13946;14374;14972;15306
-"Podravska";"Visokošolska 3. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Moški";1604;1837;1852;1956;2012;2085;2275;2319
-"Podravska";"Visokošolska 3. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";1179;1476;1502;1609;1679;1775;2114;2178
-"Koroška";"Osnovnošolska ali manj - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Moški";8090;7711;7504;7302;7043;6821;6576;6368
-"Koroška";"Osnovnošolska ali manj - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";11067;10722;10480;10255;9960;9743;9413;9110
-"Koroška";"Brez izobrazbe, nepopolna osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Moški";1660;1570;1463;1407;1316;1242;1183;1138
-"Koroška";"Brez izobrazbe, nepopolna osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";2207;2111;2013;1927;1846;1755;1678;1580
-"Koroška";"Osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Moški";6430;6141;6041;5895;5727;5579;5393;5230
-"Koroška";"Osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";8860;8611;8467;8328;8114;7988;7735;7530
-"Koroška";"Srednješolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Moški";19511;19577;19618;19436;19409;19374;19273;19318
-"Koroška";"Srednješolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";14814;14692;14612;14266;14254;14170;14056;14085
-"Koroška";"Nižja poklicna, srednja poklicna";"Prebivalci stari 15+ let - SKUPAJ";"Moški";11123;11079;10991;10928;10871;10814;10744;10660
-"Koroška";"Nižja poklicna, srednja poklicna";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";6208;6127;6080;6018;5990;5943;5946;5929
-"Koroška";"Srednja strokovna, srednja splošna";"Prebivalci stari 15+ let - SKUPAJ";"Moški";8388;8498;8627;8508;8538;8560;8529;8658
-"Koroška";"Srednja strokovna, srednja splošna";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";8606;8565;8532;8248;8264;8227;8110;8156
-"Koroška";"Višješolska, visokošolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Moški";3565;3807;3873;4051;4219;4348;4531;4627
-"Koroška";"Višješolska, visokošolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";5148;5553;5716;6050;6249;6488;6776;6892
-"Koroška";"Visokošolska 1. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Moški";1853;1855;1921;2110;2232;2309;2406;2462
-"Koroška";"Visokošolska 1. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";2833;2795;2934;3201;3313;3432;3600;3652
-"Koroška";"Visokošolska 2. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Moški";1515;1725;1717;1695;1739;1785;1839;1880
-"Koroška";"Visokošolska 2. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";2134;2529;2550;2608;2686;2782;2838;2900
-"Koroška";"Visokošolska 3. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Moški";197;227;235;246;248;254;286;285
-"Koroška";"Visokošolska 3. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";181;229;232;241;250;274;338;340
-"Savinjska";"Osnovnošolska ali manj - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Moški";29827;28301;27331;26804;25299;24342;23638;22973
-"Savinjska";"Osnovnošolska ali manj - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";39853;38799;37914;37040;35310;34594;33651;32781
-"Savinjska";"Brez izobrazbe, nepopolna osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Moški";4472;4172;3790;3617;3330;3134;3051;2929
-"Savinjska";"Brez izobrazbe, nepopolna osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";6048;5785;5447;5211;4859;4675;4451;4253
-"Savinjska";"Osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Moški";25355;24129;23541;23187;21969;21208;20587;20044
-"Savinjska";"Osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";33805;33014;32467;31829;30451;29919;29200;28528
-"Savinjska";"Srednješolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Moški";66486;67133;67655;67410;66002;66210;66523;67025
-"Savinjska";"Srednješolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";52764;52107;51939;50752;49340;49269;48740;48702
-"Savinjska";"Nižja poklicna, srednja poklicna";"Prebivalci stari 15+ let - SKUPAJ";"Moški";36699;36734;36790;36784;35840;35762;35966;36027
-"Savinjska";"Nižja poklicna, srednja poklicna";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";20839;20560;20408;20338;19797;19757;19696;19642
-"Savinjska";"Srednja strokovna, srednja splošna";"Prebivalci stari 15+ let - SKUPAJ";"Moški";29787;30399;30865;30626;30162;30448;30557;30998
-"Savinjska";"Srednja strokovna, srednja splošna";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";31925;31547;31531;30414;29543;29512;29044;29060
-"Savinjska";"Višješolska, visokošolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Moški";13669;14795;15131;15994;16250;16919;17802;18158
-"Savinjska";"Višješolska, visokošolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";19378;21077;21800;23154;23634;24586;25875;26545
-"Savinjska";"Visokošolska 1. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Moški";6936;6992;7245;8065;8291;8764;9314;9562
-"Savinjska";"Visokošolska 1. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";10496;10498;11008;12062;12408;12998;13587;13854
-"Savinjska";"Visokošolska 2. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Moški";5821;6708;6785;6763;6767;6929;7133;7219
-"Savinjska";"Visokošolska 2. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";8138;9620;9775;9961;10067;10327;10790;11143
-"Savinjska";"Visokošolska 3. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Moški";912;1095;1101;1166;1192;1226;1355;1377
-"Savinjska";"Visokošolska 3. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";744;959;1017;1131;1159;1261;1498;1548
-"Zasavska";"Osnovnošolska ali manj - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Moški";4795;4550;4374;4260;5721;5481;5256;5073
-"Zasavska";"Osnovnošolska ali manj - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";7708;7399;7213;7036;8957;8686;8401;8130
-"Zasavska";"Brez izobrazbe, nepopolna osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Moški";736;699;628;584;711;656;620;598
-"Zasavska";"Brez izobrazbe, nepopolna osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";1308;1253;1188;1142;1448;1375;1293;1234
-"Zasavska";"Osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Moški";4059;3851;3746;3676;5010;4825;4636;4475
-"Zasavska";"Osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";6400;6146;6025;5894;7509;7311;7108;6896
-"Zasavska";"Srednješolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Moški";11647;11663;11639;11437;15160;15191;15217;15196
-"Zasavska";"Srednješolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";9175;9034;8894;8664;11523;11437;11310;11301
-"Zasavska";"Nižja poklicna, srednja poklicna";"Prebivalci stari 15+ let - SKUPAJ";"Moški";6095;6003;5937;5802;7498;7477;7469;7402
-"Zasavska";"Nižja poklicna, srednja poklicna";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";3572;3497;3426;3378;4374;4367;4340;4343
-"Zasavska";"Srednja strokovna, srednja splošna";"Prebivalci stari 15+ let - SKUPAJ";"Moški";5552;5660;5702;5635;7662;7714;7748;7794
-"Zasavska";"Srednja strokovna, srednja splošna";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";5603;5537;5468;5286;7149;7070;6970;6958
-"Zasavska";"Višješolska, visokošolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Moški";2223;2324;2350;2436;3334;3451;3590;3663
-"Zasavska";"Višješolska, visokošolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";2999;3250;3366;3528;5012;5178;5448;5565
-"Zasavska";"Visokošolska 1. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Moški";1258;1222;1261;1350;1890;2000;2075;2111
-"Zasavska";"Visokošolska 1. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";1703;1681;1763;1931;2707;2803;2914;2970
-"Zasavska";"Visokošolska 2. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Moški";851;971;961;955;1254;1254;1307;1345
-"Zasavska";"Visokošolska 2. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";1184;1431;1462;1452;2089;2137;2249;2303
-"Zasavska";"Visokošolska 3. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Moški";114;131;128;131;190;197;208;207
-"Zasavska";"Visokošolska 3. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";112;138;141;145;216;238;285;292
-"Posavska";"Osnovnošolska ali manj - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Moški";8391;7981;7774;7568;7887;7575;7290;7111
-"Posavska";"Osnovnošolska ali manj - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";11422;11055;10787;10501;11129;10845;10555;10271
-"Posavska";"Brez izobrazbe, nepopolna osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Moški";1641;1533;1414;1341;1351;1278;1230;1171
-"Posavska";"Brez izobrazbe, nepopolna osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";2419;2300;2171;2079;2097;2007;1922;1813
-"Posavska";"Osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Moški";6750;6448;6360;6227;6536;6297;6060;5940
-"Posavska";"Osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";9003;8755;8616;8422;9032;8838;8633;8458
-"Posavska";"Srednješolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Moški";18337;18463;18659;18577;20121;20326;20213;20249
-"Posavska";"Srednješolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";13971;13822;13809;13487;14591;14563;14454;14414
-"Posavska";"Nižja poklicna, srednja poklicna";"Prebivalci stari 15+ let - SKUPAJ";"Moški";9876;9882;9924;9849;10536;10630;10515;10438
-"Posavska";"Nižja poklicna, srednja poklicna";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";5805;5739;5694;5707;6101;6083;6071;6014
-"Posavska";"Srednja strokovna, srednja splošna";"Prebivalci stari 15+ let - SKUPAJ";"Moški";8461;8581;8735;8728;9585;9696;9698;9811
-"Posavska";"Srednja strokovna, srednja splošna";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";8166;8083;8115;7780;8490;8480;8383;8400
-"Posavska";"Višješolska, visokošolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Moški";3482;3756;3842;4054;4495;4637;4862;4943
-"Posavska";"Višješolska, visokošolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";4806;5242;5424;5758;6531;6787;7161;7310
-"Posavska";"Visokošolska 1. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Moški";1830;1795;1883;2103;2354;2434;2553;2615
-"Posavska";"Visokošolska 1. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";2669;2577;2716;2997;3417;3568;3745;3802
-"Posavska";"Visokošolska 2. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Moški";1493;1784;1780;1756;1926;1982;2060;2076
-"Posavska";"Visokošolska 2. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";2011;2493;2525;2565;2881;2959;3108;3195
-"Posavska";"Visokošolska 3. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Moški";159;177;179;195;215;221;249;252
-"Posavska";"Visokošolska 3. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";126;172;183;196;233;260;308;313
-"Jugovzhodna Slovenija";"Osnovnošolska ali manj - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Moški";17522;16603;15863;15403;14833;14339;14003;13694
-"Jugovzhodna Slovenija";"Osnovnošolska ali manj - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";23143;22545;21879;21408;20798;20280;19791;19240
-"Jugovzhodna Slovenija";"Brez izobrazbe, nepopolna osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Moški";3638;3409;3057;2880;2710;2590;2498;2385
-"Jugovzhodna Slovenija";"Brez izobrazbe, nepopolna osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";4932;4744;4454;4249;4057;3901;3718;3522
-"Jugovzhodna Slovenija";"Osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Moški";13884;13194;12806;12523;12123;11749;11505;11309
-"Jugovzhodna Slovenija";"Osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";18211;17801;17425;17159;16741;16379;16073;15718
-"Jugovzhodna Slovenija";"Srednješolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Moški";35670;35836;36183;36056;36122;36246;36186;36238
-"Jugovzhodna Slovenija";"Srednješolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";26667;26389;26522;26017;25990;25880;25684;25735
-"Jugovzhodna Slovenija";"Nižja poklicna, srednja poklicna";"Prebivalci stari 15+ let - SKUPAJ";"Moški";19493;19327;19299;19225;19117;19046;18989;18881
-"Jugovzhodna Slovenija";"Nižja poklicna, srednja poklicna";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";10340;10171;10123;10092;10092;10053;10049;9976
-"Jugovzhodna Slovenija";"Srednja strokovna, srednja splošna";"Prebivalci stari 15+ let - SKUPAJ";"Moški";16177;16509;16884;16831;17005;17200;17197;17357
-"Jugovzhodna Slovenija";"Srednja strokovna, srednja splošna";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";16327;16218;16399;15925;15898;15827;15635;15759
-"Jugovzhodna Slovenija";"Višješolska, visokošolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Moški";7631;8217;8392;8873;9239;9619;10088;10323
-"Jugovzhodna Slovenija";"Višješolska, visokošolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";10499;11464;11814;12551;13075;13699;14322;14714
-"Jugovzhodna Slovenija";"Visokošolska 1. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Moški";4179;4122;4245;4735;4979;5228;5467;5638
-"Jugovzhodna Slovenija";"Visokošolska 1. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";5776;5563;5813;6468;6791;7165;7480;7657
-"Jugovzhodna Slovenija";"Visokošolska 2. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Moški";3028;3584;3630;3579;3687;3793;3970;4016
-"Jugovzhodna Slovenija";"Visokošolska 2. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";4309;5372;5461;5487;5668;5869;6090;6287
-"Jugovzhodna Slovenija";"Visokošolska 3. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Moški";424;511;517;559;573;598;651;669
-"Jugovzhodna Slovenija";"Visokošolska 3. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";414;529;540;596;616;665;752;770
-"Osrednjeslovenska";"Osnovnošolska ali manj - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Moški";46207;43780;42730;42255;39680;38508;37446;36489
-"Osrednjeslovenska";"Osnovnošolska ali manj - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";62989;61319;60213;59016;55778;54718;53531;52383
-"Osrednjeslovenska";"Brez izobrazbe, nepopolna osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Moški";4528;4137;3795;3676;3369;3240;3130;3079
-"Osrednjeslovenska";"Brez izobrazbe, nepopolna osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";8433;8098;7688;7382;6724;6375;6055;5740
-"Osrednjeslovenska";"Osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Moški";41679;39643;38935;38579;36311;35268;34316;33410
-"Osrednjeslovenska";"Osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";54556;53221;52525;51634;49054;48343;47476;46643
-"Osrednjeslovenska";"Srednješolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Moški";128575;128535;129500;128893;125196;125579;125125;126010
-"Osrednjeslovenska";"Srednješolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";111263;109486;109808;108586;104526;103415;101324;100799
-"Osrednjeslovenska";"Nižja poklicna, srednja poklicna";"Prebivalci stari 15+ let - SKUPAJ";"Moški";55835;54759;54558;54162;52165;52273;52506;52590
-"Osrednjeslovenska";"Nižja poklicna, srednja poklicna";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";31499;30700;30450;30074;28822;28703;28516;28328
-"Osrednjeslovenska";"Srednja strokovna, srednja splošna";"Prebivalci stari 15+ let - SKUPAJ";"Moški";72740;73776;74942;74731;73031;73306;72619;73420
-"Osrednjeslovenska";"Srednja strokovna, srednja splošna";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";79764;78786;79358;78512;75704;74712;72808;72471
-"Osrednjeslovenska";"Višješolska, visokošolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Moški";45061;47856;49405;51890;52883;54622;57416;58801
-"Osrednjeslovenska";"Višješolska, visokošolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";59730;64409;67107;71260;72803;75563;79186;81229
-"Osrednjeslovenska";"Visokošolska 1. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Moški";15731;15827;16828;18793;19608;20700;22048;22765
-"Osrednjeslovenska";"Visokošolska 1. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";23667;23864;25561;28499;29468;30839;32176;33065
-"Osrednjeslovenska";"Visokošolska 2. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Moški";23223;25031;25404;25628;25675;26120;26996;27492
-"Osrednjeslovenska";"Visokošolska 2. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";30926;34248;35053;35703;36063;37111;38471;39408
-"Osrednjeslovenska";"Visokošolska 3. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Moški";6107;6998;7173;7469;7600;7802;8372;8544
-"Osrednjeslovenska";"Visokošolska 3. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";5137;6297;6493;7058;7272;7613;8539;8756
-"Gorenjska";"Osnovnošolska ali manj - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Moški";19227;18413;17976;17667;17136;16552;16111;15754
-"Gorenjska";"Osnovnošolska ali manj - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";27993;27294;26772;26146;25497;24690;23980;23437
-"Gorenjska";"Brez izobrazbe, nepopolna osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Moški";2556;2430;2229;2131;2015;1909;1813;1712
-"Gorenjska";"Brez izobrazbe, nepopolna osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";4887;4677;4444;4223;4036;3843;3635;3423
-"Gorenjska";"Osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Moški";16671;15983;15747;15536;15121;14643;14298;14042
-"Gorenjska";"Osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";23106;22617;22328;21923;21461;20847;20345;20014
-"Gorenjska";"Srednješolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Moški";51686;51790;51781;51288;51227;51412;51132;51204
-"Gorenjska";"Srednješolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";42743;42104;41886;41011;40694;40597;40105;39886
-"Gorenjska";"Nižja poklicna, srednja poklicna";"Prebivalci stari 15+ let - SKUPAJ";"Moški";24995;24652;24436;24224;24141;24088;23951;23761
-"Gorenjska";"Nižja poklicna, srednja poklicna";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";15457;15092;14892;14725;14583;14530;14431;14247
-"Gorenjska";"Srednja strokovna, srednja splošna";"Prebivalci stari 15+ let - SKUPAJ";"Moški";26691;27138;27345;27064;27086;27324;27181;27443
-"Gorenjska";"Srednja strokovna, srednja splošna";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";27286;27012;26994;26286;26111;26067;25674;25639
-"Gorenjska";"Višješolska, visokošolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Moški";13516;14405;14668;15393;15925;16325;17002;17246
-"Gorenjska";"Višješolska, visokošolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";17229;18716;19265;20475;21291;22041;23101;23698
-"Gorenjska";"Visokošolska 1. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Moški";6014;5999;6229;6814;7167;7424;7798;7987
-"Gorenjska";"Visokošolska 1. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";8393;8421;8763;9702;10182;10608;10990;11256
-"Gorenjska";"Visokošolska 2. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Moški";6285;7001;7010;7086;7237;7329;7513;7548
-"Gorenjska";"Visokošolska 2. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";8015;9245;9413;9602;9896;10137;10598;10888
-"Gorenjska";"Visokošolska 3. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Moški";1217;1405;1429;1493;1521;1572;1691;1711
-"Gorenjska";"Visokošolska 3. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";821;1050;1089;1171;1213;1296;1513;1554
-"Primorsko-notranjska";"Osnovnošolska ali manj - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Moški";5931;5691;5530;5423;5279;5056;4911;4659
-"Primorsko-notranjska";"Osnovnošolska ali manj - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";8383;8173;7962;7816;7636;7425;7211;6987
-"Primorsko-notranjska";"Brez izobrazbe, nepopolna osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Moški";938;895;804;805;772;718;695;603
-"Primorsko-notranjska";"Brez izobrazbe, nepopolna osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";1619;1551;1442;1396;1293;1226;1152;1079
-"Primorsko-notranjska";"Osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Moški";4993;4796;4726;4618;4507;4338;4216;4056
-"Primorsko-notranjska";"Osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";6764;6622;6520;6420;6343;6199;6059;5908
-"Primorsko-notranjska";"Srednješolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Moški";13572;13598;13583;13523;13639;13723;13728;13718
-"Primorsko-notranjska";"Srednješolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";9756;9669;9642;9465;9467;9472;9353;9340
-"Primorsko-notranjska";"Nižja poklicna, srednja poklicna";"Prebivalci stari 15+ let - SKUPAJ";"Moški";7371;7312;7273;7225;7265;7289;7285;7238
-"Primorsko-notranjska";"Nižja poklicna, srednja poklicna";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";3492;3462;3404;3370;3397;3402;3406;3375
-"Primorsko-notranjska";"Srednja strokovna, srednja splošna";"Prebivalci stari 15+ let - SKUPAJ";"Moški";6201;6286;6310;6298;6374;6434;6443;6480
-"Primorsko-notranjska";"Srednja strokovna, srednja splošna";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";6264;6207;6238;6095;6070;6070;5947;5965
-"Primorsko-notranjska";"Višješolska, visokošolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Moški";3085;3310;3401;3528;3630;3714;3900;3947
-"Primorsko-notranjska";"Višješolska, visokošolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";4161;4459;4644;4890;5062;5232;5505;5613
-"Primorsko-notranjska";"Visokošolska 1. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Moški";1644;1605;1680;1819;1895;1953;2053;2099
-"Primorsko-notranjska";"Visokošolska 1. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";2146;2068;2184;2378;2500;2602;2704;2744
-"Primorsko-notranjska";"Visokošolska 2. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Moški";1255;1477;1494;1463;1490;1498;1573;1574
-"Primorsko-notranjska";"Visokošolska 2. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";1834;2167;2222;2258;2289;2342;2486;2536
-"Primorsko-notranjska";"Visokošolska 3. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Moški";186;228;227;246;245;263;274;274
-"Primorsko-notranjska";"Visokošolska 3. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";181;224;238;254;273;288;315;333
-"Goriška";"Osnovnošolska ali manj - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Moški";13209;12644;12232;12026;11713;11300;10989;10543
-"Goriška";"Osnovnošolska ali manj - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";19690;19237;18757;18312;17873;17348;16864;16311
-"Goriška";"Brez izobrazbe, nepopolna osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Moški";1704;1604;1474;1425;1329;1260;1214;1119
-"Goriška";"Brez izobrazbe, nepopolna osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";3017;2876;2704;2562;2412;2276;2164;2026
-"Goriška";"Osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Moški";11505;11040;10758;10601;10384;10040;9775;9424
-"Goriška";"Osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";16673;16361;16053;15750;15461;15072;14700;14285
-"Goriška";"Srednješolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Moški";30353;30249;30209;29815;29764;29828;29658;29736
-"Goriška";"Srednješolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";22120;21916;21937;21265;21098;21012;20726;20705
-"Goriška";"Nižja poklicna, srednja poklicna";"Prebivalci stari 15+ let - SKUPAJ";"Moški";16337;16053;15787;15639;15553;15541;15447;15393
-"Goriška";"Nižja poklicna, srednja poklicna";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";8079;7964;7846;7775;7711;7682;7664;7640
-"Goriška";"Srednja strokovna, srednja splošna";"Prebivalci stari 15+ let - SKUPAJ";"Moški";14016;14196;14422;14176;14211;14287;14211;14343
-"Goriška";"Srednja strokovna, srednja splošna";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";14041;13952;14091;13490;13387;13330;13062;13065
-"Goriška";"Višješolska, visokošolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Moški";7542;8036;8208;8555;8732;9056;9399;9555
-"Goriška";"Višješolska, visokošolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";9773;10458;10729;11312;11789;12266;12820;13109
-"Goriška";"Visokošolska 1. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Moški";3616;3540;3647;3939;4062;4282;4491;4579
-"Goriška";"Visokošolska 1. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";4876;4689;4869;5274;5588;5892;6142;6281
-"Goriška";"Visokošolska 2. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Moški";3458;3931;3981;4007;4041;4133;4227;4281
-"Goriška";"Visokošolska 2. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";4552;5311;5388;5522;5666;5785;6002;6142
-"Goriška";"Visokošolska 3. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Moški";468;565;580;609;629;641;681;695
-"Goriška";"Visokošolska 3. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";345;458;472;516;535;589;676;686
-"Obalno-kraška";"Osnovnošolska ali manj - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Moški";11873;11266;11041;10789;10398;10021;9687;9401
-"Obalno-kraška";"Osnovnošolska ali manj - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";16253;15850;15458;15203;14873;14537;14221;13881
-"Obalno-kraška";"Brez izobrazbe, nepopolna osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Moški";1583;1479;1377;1327;1250;1197;1141;1079
-"Obalno-kraška";"Brez izobrazbe, nepopolna osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";3608;3439;3252;3099;2937;2810;2685;2532
-"Obalno-kraška";"Osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Moški";10290;9787;9664;9462;9148;8824;8546;8322
-"Obalno-kraška";"Osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";12645;12411;12206;12104;11936;11727;11536;11349
-"Obalno-kraška";"Srednješolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Moški";28226;28379;28575;28400;28406;28471;28503;28745
-"Obalno-kraška";"Srednješolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";22815;22712;22729;22959;22682;22713;22553;22647
-"Obalno-kraška";"Nižja poklicna, srednja poklicna";"Prebivalci stari 15+ let - SKUPAJ";"Moški";13684;13508;13523;13318;13227;13143;13127;13160
-"Obalno-kraška";"Nižja poklicna, srednja poklicna";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";7500;7399;7400;7379;7352;7356;7375;7416
-"Obalno-kraška";"Srednja strokovna, srednja splošna";"Prebivalci stari 15+ let - SKUPAJ";"Moški";14542;14871;15052;15082;15179;15328;15376;15585
-"Obalno-kraška";"Srednja strokovna, srednja splošna";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";15315;15313;15329;15580;15330;15357;15178;15231
-"Obalno-kraška";"Višješolska, visokošolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Moški";8002;8483;8620;9044;9277;9514;9906;10111
-"Obalno-kraška";"Višješolska, visokošolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";9642;10455;10780;11506;11857;12297;12913;13269
-"Obalno-kraška";"Visokošolska 1. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Moški";3901;3794;3897;4220;4378;4512;4750;4858
-"Obalno-kraška";"Visokošolska 1. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";4682;4552;4746;5310;5525;5728;5998;6187
-"Obalno-kraška";"Visokošolska 2. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Moški";3552;4042;4056;4110;4161;4232;4329;4400
-"Obalno-kraška";"Visokošolska 2. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";4526;5339;5431;5529;5637;5807;6045;6185
-"Obalno-kraška";"Visokošolska 3. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Moški";549;647;667;714;738;770;827;853
-"Obalno-kraška";"Visokošolska 3. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Ženske";434;564;603;667;695;762;870;897
+"STATISTIÈNA REGIJA";"IZOBRAZBA";"STATUS AKTIVNOSTI";"SPOL";"2013";"2014";"2015";"2016";"2017";"2018"
+"Pomurska";"Osnovnošolska ali manj - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";36914;35806;34654;33587;32490;31455
+"Pomurska";"Brez izobrazbe, nepopolna osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";3683;3521;3400;3275;3146;3005
+"Pomurska";"Osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";33231;32285;31254;30312;29344;28450
+"Pomurska";"Srednješolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";51591;51094;51280;51241;50922;50963
+"Pomurska";"Nižja poklicna, srednja poklicna";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";23806;23719;23825;23713;23526;23443
+"Pomurska";"Srednja strokovna, srednja splošna";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";27785;27375;27455;27528;27396;27520
+"Pomurska";"Višješolska, visokošolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";14074;14835;15363;15956;16816;17074
+"Pomurska";"Visokošolska 1. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";7046;7687;8043;8386;8775;8946
+"Pomurska";"Visokošolska 2. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";6333;6398;6542;6771;7126;7189
+"Pomurska";"Visokošolska 3. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";695;750;778;799;915;939
+"Podravska";"Osnovnošolska ali manj - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";74197;72068;69734;67160;65146;63227
+"Podravska";"Brez izobrazbe, nepopolna osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";10409;9892;9431;8986;8605;8194
+"Podravska";"Osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";63788;62176;60303;58174;56541;55033
+"Podravska";"Srednješolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";157142;155890;155944;155703;154358;154645
+"Podravska";"Nižja poklicna, srednja poklicna";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";67685;67374;67116;66777;66274;66211
+"Podravska";"Srednja strokovna, srednja splošna";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";89457;88516;88828;88926;88084;88434
+"Podravska";"Višješolska, visokošolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";49303;52500;54291;56060;58578;59872
+"Podravska";"Visokošolska 1. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";23236;25741;26875;27914;28941;29663
+"Podravska";"Visokošolska 2. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";22713;23194;23725;24286;25248;25712
+"Podravska";"Visokošolska 3. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";3354;3565;3691;3860;4389;4497
+"Koroška";"Osnovnošolska ali manj - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";17984;17557;17003;16564;15989;15478
+"Koroška";"Brez izobrazbe, nepopolna osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";3476;3334;3162;2997;2861;2718
+"Koroška";"Osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";14508;14223;13841;13567;13128;12760
+"Koroška";"Srednješolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";34230;33702;33663;33544;33329;33403
+"Koroška";"Nižja poklicna, srednja poklicna";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";17071;16946;16861;16757;16690;16589
+"Koroška";"Srednja strokovna, srednja splošna";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";17159;16756;16802;16787;16639;16814
+"Koroška";"Višješolska, visokošolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";9589;10101;10468;10836;11307;11519
+"Koroška";"Visokošolska 1. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";4855;5311;5545;5741;6006;6114
+"Koroška";"Visokošolska 2. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";4267;4303;4425;4567;4677;4780
+"Koroška";"Visokošolska 3. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";467;487;498;528;624;625
+"Savinjska";"Osnovnošolska ali manj - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";65245;63844;60609;58936;57289;55754
+"Savinjska";"Brez izobrazbe, nepopolna osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";9237;8828;8189;7809;7502;7182
+"Savinjska";"Osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";56008;55016;52420;51127;49787;48572
+"Savinjska";"Srednješolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";119594;118162;115342;115479;115263;115727
+"Savinjska";"Nižja poklicna, srednja poklicna";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";57198;57122;55637;55519;55662;55669
+"Savinjska";"Srednja strokovna, srednja splošna";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";62396;61040;59705;59960;59601;60058
+"Savinjska";"Višješolska, visokošolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";36931;39148;39884;41505;43677;44703
+"Savinjska";"Visokošolska 1. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";18253;20127;20699;21762;22901;23416
+"Savinjska";"Visokošolska 2. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";16560;16724;16834;17256;17923;18362
+"Savinjska";"Visokošolska 3. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";2118;2297;2351;2487;2853;2925
+"Zasavska";"Osnovnošolska ali manj - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";11587;11296;14678;14167;13657;13203
+"Zasavska";"Brez izobrazbe, nepopolna osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";1816;1726;2159;2031;1913;1832
+"Zasavska";"Osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";9771;9570;12519;12136;11744;11371
+"Zasavska";"Srednješolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";20533;20101;26683;26628;26527;26497
+"Zasavska";"Nižja poklicna, srednja poklicna";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";9363;9180;11872;11844;11809;11745
+"Zasavska";"Srednja strokovna, srednja splošna";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";11170;10921;14811;14784;14718;14752
+"Zasavska";"Višješolska, visokošolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";5716;5964;8346;8629;9038;9228
+"Zasavska";"Visokošolska 1. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";3024;3281;4597;4803;4989;5081
+"Zasavska";"Visokošolska 2. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";2423;2407;3343;3391;3556;3648
+"Zasavska";"Visokošolska 3. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";269;276;406;435;493;499
+"Posavska";"Osnovnošolska ali manj - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";18561;18069;19016;18420;17845;17382
+"Posavska";"Brez izobrazbe, nepopolna osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";3585;3420;3448;3285;3152;2984
+"Posavska";"Osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";14976;14649;15568;15135;14693;14398
+"Posavska";"Srednješolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";32468;32064;34712;34889;34667;34663
+"Posavska";"Nižja poklicna, srednja poklicna";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";15618;15556;16637;16713;16586;16452
+"Posavska";"Srednja strokovna, srednja splošna";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";16850;16508;18075;18176;18081;18211
+"Posavska";"Višješolska, visokošolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";9266;9812;11026;11424;12023;12253
+"Posavska";"Visokošolska 1. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";4599;5100;5771;6002;6298;6417
+"Posavska";"Visokošolska 2. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";4305;4321;4807;4941;5168;5271
+"Posavska";"Visokošolska 3. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";362;391;448;481;557;565
+"Jugovzhodna Slovenija";"Osnovnošolska ali manj - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";37742;36811;35631;34619;33794;32934
+"Jugovzhodna Slovenija";"Brez izobrazbe, nepopolna osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";7511;7129;6767;6491;6216;5907
+"Jugovzhodna Slovenija";"Osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";30231;29682;28864;28128;27578;27027
+"Jugovzhodna Slovenija";"Srednješolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";62705;62073;62112;62126;61870;61973
+"Jugovzhodna Slovenija";"Nižja poklicna, srednja poklicna";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";29422;29317;29209;29099;29038;28857
+"Jugovzhodna Slovenija";"Srednja strokovna, srednja splošna";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";33283;32756;32903;33027;32832;33116
+"Jugovzhodna Slovenija";"Višješolska, visokošolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";20206;21424;22314;23318;24410;25037
+"Jugovzhodna Slovenija";"Visokošolska 1. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";10058;11203;11770;12393;12947;13295
+"Jugovzhodna Slovenija";"Visokošolska 2. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";9091;9066;9355;9662;10060;10303
+"Jugovzhodna Slovenija";"Visokošolska 3. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";1057;1155;1189;1263;1403;1439
+"Osrednjeslovenska";"Osnovnošolska ali manj - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";102943;101271;95458;93226;90977;88872
+"Osrednjeslovenska";"Brez izobrazbe, nepopolna osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";11483;11058;10093;9615;9185;8819
+"Osrednjeslovenska";"Osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";91460;90213;85365;83611;81792;80053
+"Osrednjeslovenska";"Srednješolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";239308;237479;229722;228994;226449;226809
+"Osrednjeslovenska";"Nižja poklicna, srednja poklicna";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";85008;84236;80987;80976;81022;80918
+"Osrednjeslovenska";"Srednja strokovna, srednja splošna";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";154300;153243;148735;148018;145427;145891
+"Osrednjeslovenska";"Višješolska, visokošolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";116512;123150;125686;130185;136602;140030
+"Osrednjeslovenska";"Visokošolska 1. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";42389;47292;49076;51539;54224;55830
+"Osrednjeslovenska";"Visokošolska 2. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";60457;61331;61738;63231;65467;66900
+"Osrednjeslovenska";"Visokošolska 3. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";13666;14527;14872;15415;16911;17300
+"Gorenjska";"Osnovnošolska ali manj - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";44748;43813;42633;41242;40091;39191
+"Gorenjska";"Brez izobrazbe, nepopolna osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";6673;6354;6051;5752;5448;5135
+"Gorenjska";"Osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";38075;37459;36582;35490;34643;34056
+"Gorenjska";"Srednješolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";93667;92299;91921;92009;91237;91090
+"Gorenjska";"Nižja poklicna, srednja poklicna";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";39328;38949;38724;38618;38382;38008
+"Gorenjska";"Srednja strokovna, srednja splošna";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";54339;53350;53197;53391;52855;53082
+"Gorenjska";"Višješolska, visokošolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";33933;35868;37216;38366;40103;40944
+"Gorenjska";"Visokošolska 1. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";14992;16516;17349;18032;18788;19243
+"Gorenjska";"Visokošolska 2. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";16423;16688;17133;17466;18111;18436
+"Gorenjska";"Visokošolska 3. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";2518;2664;2734;2868;3204;3265
+"Primorsko-notranjska";"Osnovnošolska ali manj - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";13492;13239;12915;12481;12122;11646
+"Primorsko-notranjska";"Brez izobrazbe, nepopolna osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";2246;2201;2065;1944;1847;1682
+"Primorsko-notranjska";"Osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";11246;11038;10850;10537;10275;9964
+"Primorsko-notranjska";"Srednješolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";23225;22988;23106;23195;23081;23058
+"Primorsko-notranjska";"Nižja poklicna, srednja poklicna";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";10677;10595;10662;10691;10691;10613
+"Primorsko-notranjska";"Srednja strokovna, srednja splošna";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";12548;12393;12444;12504;12390;12445
+"Primorsko-notranjska";"Višješolska, visokošolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";8045;8418;8692;8946;9405;9560
+"Primorsko-notranjska";"Visokošolska 1. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";3864;4197;4395;4555;4757;4843
+"Primorsko-notranjska";"Visokošolska 2. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";3716;3721;3779;3840;4059;4110
+"Primorsko-notranjska";"Visokošolska 3. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";465;500;518;551;589;607
+"Goriška";"Osnovnošolska ali manj - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";30989;30338;29586;28648;27853;26854
+"Goriška";"Brez izobrazbe, nepopolna osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";4178;3987;3741;3536;3378;3145
+"Goriška";"Osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";26811;26351;25845;25112;24475;23709
+"Goriška";"Srednješolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";52146;51080;50862;50840;50384;50441
+"Goriška";"Nižja poklicna, srednja poklicna";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";23633;23414;23264;23223;23111;23033
+"Goriška";"Srednja strokovna, srednja splošna";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";28513;27666;27598;27617;27273;27408
+"Goriška";"Višješolska, visokošolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";18937;19867;20521;21322;22219;22664
+"Goriška";"Visokošolska 1. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";8516;9213;9650;10174;10633;10860
+"Goriška";"Visokošolska 2. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";9369;9529;9707;9918;10229;10423
+"Goriška";"Visokošolska 3. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";1052;1125;1164;1230;1357;1381
+"Obalno-kraška";"Osnovnošolska ali manj - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";26499;25992;25271;24558;23908;23282
+"Obalno-kraška";"Brez izobrazbe, nepopolna osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";4629;4426;4187;4007;3826;3611
+"Obalno-kraška";"Osnovnošolska";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";21870;21566;21084;20551;20082;19671
+"Obalno-kraška";"Srednješolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";51304;51359;51088;51184;51056;51392
+"Obalno-kraška";"Nižja poklicna, srednja poklicna";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";20923;20697;20579;20499;20502;20576
+"Obalno-kraška";"Srednja strokovna, srednja splošna";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";30381;30662;30509;30685;30554;30816
+"Obalno-kraška";"Višješolska, visokošolska - Skupaj";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";19400;20550;21134;21811;22819;23380
+"Obalno-kraška";"Visokošolska 1. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";8643;9530;9903;10240;10748;11045
+"Obalno-kraška";"Visokošolska 2. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";9487;9639;9798;10039;10374;10585
+"Obalno-kraška";"Visokošolska 3. stopnje ipd.";"Prebivalci stari 15+ let - SKUPAJ";"Spol - SKUPAJ";1270;1381;1433;1532;1697;1750
