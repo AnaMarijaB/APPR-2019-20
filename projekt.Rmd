@@ -11,29 +11,27 @@ output:
 ---
 
 ```{r setup, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
-# Če želimo nastaviti pisave v PDF-ju, odkomentiramo
-# in sledimo navodilom v programu.
-#source("fontconfig.r", encoding="UTF-8")
-
-# Uvoz vseh potrebnih knjižnic
 source("lib/libraries.r", encoding="UTF-8")
 ```
 
-```{r rstudio, echo=FALSE, results='asis'}
-# Izris povezave do RStudia na Binderju
+
+```{r rstudio, echo=FALSE, results='asis', warning=FALSE }
 source("lib/rstudio.r", encoding="UTF-8")
 ```
 
 # Izbira teme
 
-Analizirala bom podatke od leta 2013 do 2018. Podatke sem pobrala iz [Sursa](https://pxweb.stat.si/SiStat). 
+Analizirala sem podatke od leta 2013 do 2018. Podatke sem pobrala iz [Sursa](https://pxweb.stat.si/SiStat). 
 
 * PO REGIJAH: Zanima me kako je povezana izobrazba s splošnim zadovoljstvom ljudi v Sloveniji.
 * PO DOHODKU: Zanima me kako je povezano zdravsveno stanje s splošnim zadovoljstvom ljudi, glede na dohodek gospodinjstev.
 * PO STAROSTI: Zanima me kako je povezano zdravsveno stanje s splošnim zadovoljstvom ljudi, glede na starost prebivalstva.
 
-
+<center>
 ![](slike/slika.jpg)
+
+</center>
+
 
 ***
 
@@ -46,80 +44,113 @@ source("uvoz/uvoz.r", encoding="UTF-8")
 Podatke sem uvozila v obliki CSV iz Statističnega urada.
 Podatke imam v šestih razpredelnicah v obliki *tidy data*.
 
-REGIJE: 
+1. $\color{green}{\text{REGIJE}}$
 
-1.ZADOVOLJSTVO: Surova tabela vsebuje podatke za 100 ljudi in sicer:
-  - `Regija` - podatki o regijah
-  - `Samoocena` - spremenljivka: stopnja zadovoljstva, ocenjena s točkami od 1 do 10 ali neznano
-  - `leto` - spremenljivka: pove nam v katerem letu opazujemo,
+* $\color{black}{\text{ZADOVOLJSTVO}}$: Tabela vsebuje podatke za 100 ljudi in sicer:
+  +  `Regija` - podatki o regijah
+  +  `Samoocena` - spremenljivka: stopnja zadovoljstva, ocenjena s točkami od 1 do 10 ali neznano
+  +  `leto` - spremenljivka: pove nam v katerem letu opazujemo
 
-  Tebelo sem prečistila tako, da vsebuje podatke za osebe, ki so zadovoljne vsaj 7 ali več
+  Tebelo sem prečistila tako, da vsebuje podatke za osebe, ki so zadovoljne vsaj 8 ali več
 
-2. IZOBRAZBA: Surova tabela vsebuje podatke za celotno Slovenijo in sicer:
-  - `Regija` - podatki o regijah
-  - `Izobrazba` - spremenljivka: naziv stopnje izbrazbe,
-  - `Spol` - spremenljivka: moški ali ženski, 
-  - `leto` - spremenljivka: pove nam v katerem letu opazujemo
+* $\color{black}{\text{IZOBRAZBA}}$: Tabela vsebuje podatke za celotno Slovenijo in sicer:
+  + `Regija` - podatki o regijah
+  + `Izobrazba` - spremenljivka: naziv stopnje izbrazbe,
+  + `leto` - spremenljivka: pove nam v katerem letu opazujemo
   
   Tabelo sem prečistila tako, da vsebuje podatke za osebe, ki imajo vsaj visokošolsko stopnjo izobrazbe ali več.
 
 Predpostavljam, da večja kot je izobraženost ljudi v posamezni regiji, večje zadovoljstvo je prisotno.
 
-DOHODEK:
+2. $\color{green}{\text{DOHODEK}}$
 
-3. ZADOVOLJSTVO: Surova tabela vsebuje podatke za 100 ljudi in sicer:
-  - `Regija` - SLOVENIJA (stolpec v analizi izbrišem)
-  - `Spol` - spremenljivka: moški ali ženski
-  - `Dohodek` - izražen v kvintilih (1. kvintil, ...)
-  - `Samoocena` - spremenljivka: stopnja zadovoljstva, ocenjena s točkami od 1 do 10 ali neznano
-  - `leto` - spremenljivka: pove nam v katerem letu opazujemo
+* $\color{black}{\text{ZADOVOLJSTVO}}$: Tabela vsebuje podatke za 100 ljudi in sicer:
+  + `Dohodek` - izražen v kvintilih (1. kvintil, ...)
+  + `Samoocena` - spremenljivka: stopnja zadovoljstva, ocenjena s točkami od 1 do 10 ali neznano
+  + `leto` - spremenljivka: pove nam v katerem letu opazujemo
 
-  Tebelo sem prečistila tako, da vsebuje podatke za osebe, ki so zadovoljne vsaj 7 ali več
+  Tebelo sem prečistila tako, da vsebuje podatke za osebe, ki so zadovoljne vsaj 8 ali več
 
-4. ZDRAVSTVENO STANJE: Surova tabela vsebuje podatke za 100 ljudi in sicer:
+* $\color{black}{\text{ZDRAVSTVENO STANJE}}$: Tabela vsebuje podatke za 100 ljudi in sicer:
   - `Dohodek` - izražen v kvintilih (1. kvintil, ...)
   - `Zdravstvo` - spremenljivka: ocena zdravstvenega stanje (od zelo slabe do zelo dobre)
   - `leto` - spremenljivka: pove nam v katerem letu opazujemo
  
   Tabelo sem prečistila tako, da vsebuje število oseb, ki so označili svoje zdravstveno stanje kot zelo dobro.
 
-Predpostavljam, da večji dohodek vpliva na večje zadovoljstvo ljudi in boljše zdravstveno stanje.
+Predpostavljam, da večji dohodek in boljše zdravstveno stanje vpliva na večje zadovoljstvo ljudi .
 
-STAROST:
+3. $\color{green}{\text{STAROST}}$
 
-3. ZADOVOLJSTVO: Surova tabela vsebuje podatke za 100 ljudi in sicer:
-  - `Starost` - podatki o starosti (od 16 do 66 in več let)
-  - `Spol` - spremenljivka: moški ali ženski
-  - `Samoocena` - spremenljivka: stopnja zadovoljstva, ocenjena s točkami od 1 do 10 ali neznano
-  - `leto` - spremenljivka: pove nam v katerem letu opazujemo
+* $\color{black}{\text{ZADOVOLJSTVO}}$: Tabela vsebuje podatke za 100 ljudi in sicer:
+  + `Starost` - podatki o starosti (od 16 do 66 in več let)
+  + `Samoocena` - spremenljivka: stopnja zadovoljstva, ocenjena s točkami od 1 do 10 ali neznano
+  + `leto` - spremenljivka: pove nam v katerem letu opazujemo
 
-  Tebelo sem prečistila tako, da vsebuje podatke za osebe, ki so zadovoljne vsaj 7 ali več
+  Tebelo sem prečistila tako, da vsebuje podatke za osebe, ki so zadovoljne vsaj 8 ali več
 
-4. ZDRAVSTVENO STANJE: Surova tabela vsebuje podatke za 100 ljudi in sicer:
+* $\color{black}{\text{ZDRAVSTVENO STANJE}}$: Tabela vsebuje podatke za 100 ljudi in sicer:
   - `Starost` - podatki o starosti (od 16 do 66 in več let)
   - `Zdravstvo` - spremenljivka: ocena zdravstvenega stanje (od zelo slabe do zelo dobre)
   - `leto` - spremenljivka: pove nam v katerem letu opazujemo
  
   Tabelo sem prečistila tako, da vsebuje število oseb, ki so označili svoje zdravstveno stanje kot zelo dobro.
 
-Predpostavljam, da manjša starost vpliva na večje zadovoljstvo ljudi in boljše zdravstveno stanje.
+Predpostavljam, da manjša starost in boljše zdravstveno stanje vpliva na večje zadovoljstvo ljudi .
 
 
-Spodnji zemljevid prikazuje povprečno zadovoljstvo ljudi po regijah.
+# Analiza
 
-
-```{r zemljevid, echo=FALSE, fig.align='left'}
-
-zemljevid.zadovoljstvo
-
-zemljevid.izobrazba
-
+```{r vizualizacija, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
+source("vizualizacija/vizualizacija.r", encoding="UTF-8")
 ```
 
-```{r graf_sreca, echo=FALSE, fig.align='left'}
+ 1. $\color{green}{\text{REGIJE}}$
+
+Najprej me je zanimalo, v kakšni slovenski regiji so prebivalci najsrečnejši. Spodnji zemlevid prikazuje procent ljudi, ki so zadovoljstvo ocenili z 8 al več v letu 2018. Sama sem ocenila, da je 8 v redu meja za srečo.
+Torej vidimo, da so bili najsrečnejši na Gorenjskem, nadalje na Goriškem in Osrednjeslovenskem.
+Najmanj srečnejši so bili Primorsko-notranjska, Pomurska, Posavska
+
+Nadalje me je zanimalo ali izobrazba vpliva na zadovoljstvo. Iz zemljevida lahko razberemo:
+Največ izobraženih ljudi je: Osrednjeslovenska, Gorenjska in Obalno-Kraška
+Najmanj izobraženih ljudi je: Pomurska, Posavska, Koroška
+
+Torej je predpostavka o sorazmernosti sreče z izobrazbo pravilna. Izstopajo nekatere regije.
+
+```{r zemljevid, echo=FALSE, fig.align = 'left'}
+zemljevid.zadovoljstvo
+zemljevid.izobrazba
+```
+
+
+2. $\color{green}{\text{DOHODEK}}$
+
+V prvem grafu vidimo, da je sreča sorazmerna z dohodkom. Višji kot je dohodek, bolj je človek srečen.
+
+V drugem grafu vidimo, da je tudi zdravstveno stanje sorazmerno z dohodkom.
+
+Torej je moja predpostavka o sorazmernosti dohodka in zdravstvenega stanja pravilna.
+
+```{r stolpicni_grafikon, echo=FALSE, fig.align='left'}
 
 graf_sreca
 
 graf_zdravje
+
+```
+
+3. $\color{green}{\text{STAROST}}$
+
+Iz prvega grafa vidimo, da je najsrečnejša najmlajša populacija (16-25 let), najamanj pa najstarejša populacija (66 in več).
+
+Iz drugega grafa prav tako vidimo, da so s svojim zdravjem najbolj zadovoljni najmlajši.
+
+Tudi pri tretjem področju se predpostavka izkaže za pravilno.
+
+```{r graf, echo=FALSE, message=FALSE, fig.align='left'}
+
+graf_starost
+
+graf_zdravstvo
 
 ```

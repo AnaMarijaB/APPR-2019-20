@@ -141,7 +141,7 @@ zdravstvo_dohodek <- uvozi.zdravstvo.DOHODEK()
 uvozi.zadovoljstvo.STAROST <- function() {
   zadovoljstvo.STAROST <- read_csv2("podatki/splosno_zadovoljstvo_z_zivljenjem_STAROST.csv", skip=2,
                                locale=locale(encoding='Windows-1250'))
-  colnames(zadovoljstvo.STAROST) <- c('REGIJA','STAROST','SPOL','SAMOOCENA', 2012:2018)
+  colnames(zadovoljstvo.STAROST) <- c('REGIJA','STAROST','SPOL','SAMOOCENA', 2013:2018)
   
   ocena <- c("4","6","8","10","neznano")
   imena <- c("0-4 (%)", "5-6 (%)", "7-8 (%)", "9-10 (%)", "Neznano (%)")

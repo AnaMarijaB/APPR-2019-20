@@ -73,3 +73,13 @@ graf_zdravje <- plot_ly(zdravstvo_dohodek, x = ~2013:2018, y = ~prvi_kvintil2$vr
          yaxis = list(title = ""),
          margin = list(b = 100),
          barmode = 'group')
+
+#graf: zadovoljstvo z šivljenjem po starosti
+graf_starost <- ggplot((data = zadovoljstvo_starost), aes(x= as.numeric(leto), y=vrednost, col=STAROST)) + geom_point() + geom_line() +
+  scale_x_continuous('leto', breaks = seq(2013, 2018, 1), limits = c(2013,2018)) +
+  ggtitle('PROCENT LJUDI PO STAROSTI, KI SO SVOJO SREČO OZNAČILI VEČ KOT 8')
+
+#GRAF: ocena zdravstvenega stanja po starosti
+graf_zdravstvo <- ggplot((data = zdravstvo_starost), aes(x= as.numeric(leto), y=vrednost, col=STAROST)) + geom_point() + geom_line() +
+  scale_x_continuous('leto', breaks = seq(2013, 2018, 1), limits = c(2013,2018)) +
+  ggtitle('PROCENT LJUDI PO STAROSTI, KI SO SVOJE ZDRAVJE OCENILI Z ZELO DOBRO')
