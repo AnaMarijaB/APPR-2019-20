@@ -24,9 +24,9 @@ najsrecnejsi_2018 <- filter(zadovoljstvo_regije, leto == '2018')
 zemljevid.zadovoljstvo <- ggplot() +
   geom_polygon(data = right_join(najsrecnejsi_2018,Slovenija, by = c('Regija')),
                aes(x = long, y = lat, group = group, fill = vrednost))+
-  xlab("") + ylab("") + ggtitle('število ljudi, ki so srečo ocenili več kot 8 v letu 2018') + 
+  xlab("") + ylab("") + ggtitle('PROCENT LJUDI, KI SO V LETU 2018 SREČO OZNAČILI Z VEČ KOT 8') + 
   theme(axis.title=element_blank(), axis.text=element_blank(), axis.ticks=element_blank(), panel.background = element_blank()) + 
-  scale_fill_gradient(low = '#25511C', high='#2BFF00', limits = c(50,80))
+  scale_fill_gradient(low = '#2f5163', high='#71c0eb', limits = c(50,80))
 zemljevid.zadovoljstvo$labels$fill <- 'procent najsrečnejših'
 
 #zemljevid: procent ljudi, ki imajo višješolsko zobrazbo ali več v letu 2018
@@ -35,7 +35,7 @@ zemljevid.izobrazba <- ggplot() +
                aes(x = long, y = lat, group = group, fill = povprecje))+
   xlab("") + ylab("") + ggtitle('PROCENT LJUDI Z VIŠJEŠOLSKO IZOBRAZBO ALI VEČ V LETU 2018') + 
   theme(axis.title=element_blank(), axis.text=element_blank(), axis.ticks=element_blank(), panel.background = element_blank()) + 
-  scale_fill_gradient(low = '#25511C', high='#2BFF00', limits = c(7,12))
+  scale_fill_gradient(low = '#2f5163', high='#71c0eb', limits = c(7,16))
 zemljevid.izobrazba$labels$fill <- 'procent izobraženih'
 
 #stolpični grafikon: procent ludi po kvantilih in letih, ki so svojo srečo označili več kot 8

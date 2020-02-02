@@ -9,7 +9,7 @@ sl <- locale("sl", decimal_mark=",", grouping_mark=".")
 uvozi.povprecno.zadovoljstvo <- function() {
   zadovoljstvo.REGIJE <- read_csv2("podatki/splosno_zadovoljstvo_z_zivljenjem_PO_REGIJAH.csv", skip=2, na=c("", "..."),
                                    locale=locale(encoding="Windows-1250"))
-  colnames(zadovoljstvo.REGIJE) <- c('Regija', 'SAMOOCENA',2012:2018)
+  colnames(zadovoljstvo.REGIJE) <- c('Regija', 'SAMOOCENA',2013:2018)
   
   ocena <- c("4","6","8","10","neznano")
   imena <- c("0-4 (%)", "5-6 (%)", "7-8 (%)", "9-10 (%)", "Neznano (%)")
@@ -35,7 +35,7 @@ povprecno.zadovoljstvo <- uvozi.povprecno.zadovoljstvo()
 uvozi.zadovoljstvo.REGIJE <- function() {
   zadovoljstvo.REGIJE <- read_csv2("podatki/splosno_zadovoljstvo_z_zivljenjem_PO_REGIJAH.csv", skip=2, na=c("", "..."),
                                 locale=locale(encoding="Windows-1250"))
-  colnames(zadovoljstvo.REGIJE) <- c('Regija', 'SAMOOCENA',2012:2018)
+  colnames(zadovoljstvo.REGIJE) <- c('Regija', 'SAMOOCENA',2013:2018)
 
   ocena <- c("4","6","8","10","neznano")
   imena <- c("0-4 (%)", "5-6 (%)", "7-8 (%)", "9-10 (%)", "Neznano (%)")
@@ -177,7 +177,21 @@ uvozi.zdravstvo.STAROST <- function() {
 zdravstvo_starost <- uvozi.zdravstvo.STAROST()
 
 
+#4. faza: Napredna analiza
 
+uvozi.poraba <- function() {
+  poraba_clan_gospodinjstvo <- read_csv2("podatki/poraba.csv", skip=2,
+                                 locale=locale(encoding='Windows-1250'))
+  colnames(poraba_clan_gospodinjstvo) <- c('SREDSTVA','MERITVE', 2000:2010, '2012','2015','2018')
+  
+  poraba_clan_gospodinjstvo <- poraba_clan_gospodinjstvo %>% select(-MERITVE) 
+  
+  poraba_clan_gospodinjstvo <- gather(poraba_clan_gospodinjstvo, key = "leto", value = "vrednost", -SREDSTVA)
+  
+  return(poraba_clan_gospodinjstvo)
+}
+
+PORABA <- uvozi.poraba()
 
 
 

@@ -154,3 +154,17 @@ graf_starost
 graf_zdravstvo
 
 ```
+
+#Napredna analiza podatkov
+
+
+```{r analiza, echo=FALSE, message=FALSE}
+source("analiza/analiza.r", encoding="UTF-8")
+```
+
+Graf prikazuje porabo na druinskega člana letno. Do leta 2010 so bili podatki za vsako leto, od leta 2010 naprej pa na 2 ali 3 leta. Zadnji podatek je bil za leto 2018. Naredila sem napoved porabe gospodinjstev. Kot vidimo, bo poraba na družinskega člana zelo rasla.
+
+```{r lin1, echo=FALSE, message=FALSE, fig.align='center', fig.cap=''}
+print(lin1)
+```
+
