@@ -2,16 +2,19 @@ library(shiny)
 
 shinyUI(fluidPage(
   
-  titlePanel("Slovenske občine"),
+  titlePanel('Dostopnost dobrin po starosti in spolu'),
   
-  tabsetPanel(
-      tabPanel("Velikost družine",
-               DT::dataTableOutput("druzine")),
-      
-      tabPanel("Število naselij",
-               sidebarPanel(
-                  uiOutput("pokrajine")
-                ),
-               mainPanel(plotOutput("naselja")))
-    )
+  sidebarPanel(
+    selectInput('spol','SPOL',
+                c('moski','zenski')),
+    selectInput('starost','STAROST',
+                levels(as.factor(DOSTOPNOST$STAROST))),
+    selectInput('dobrina','DOBRINA',
+                levels(as.factor(DOSTOPNOST$DOBRINA)))
+  ),
+  
+  mainPanel(
+    dygraphOutput('dostopnost')
+  )
+  
 ))

@@ -7,7 +7,7 @@ output:
     includes:
       in_header: lib/styles.sty
     latex_engine: xelatex
-#runtime: shiny
+runtime: shiny
 ---
 
 ```{r setup, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
@@ -155,7 +155,7 @@ graf_zdravstvo
 
 ```
 
-#Napredna analiza podatkov
+# Napredna analiza podatkov
 
 
 ```{r analiza, echo=FALSE, message=FALSE}
@@ -167,4 +167,22 @@ Graf prikazuje porabo na druinskega člana letno. Do leta 2010 so bili podatki z
 ```{r lin1, echo=FALSE, message=FALSE, fig.align='center', fig.cap=''}
 print(lin1)
 ```
+
+# Shiny
+
+Za zaključek sem naredila pregled dostopnosti dobrin po spolu in starosti. Iz aplikacije lahko razberemo naslednje zanimivosti:
+
+V zadnjih štirih letih si lahko druženje vsaj 1x na mesec privošči več ljudi. Dostopnost prostega časa enakomerno narašča med vsemi starosti in spoli.
+
+Pri vseh dobrinah je število ljudi, ki si jih lahko privošči kar veliko. Izjema so plačljive prostočasne aktivnosti, pri katerih število ljudi pride komaj do 72 pri starosti 16-25 let. Nad 46 let vrednost pade celo pod 50.
+
+
+```{r shiny, echo=FALSE}
+shinyAppDir("shiny", options=list(width="100%", height=600))
+```
+
+# Zaključek
+
+Temo sem izbrala, ker še nikjer nisem zasledila člankov in spletnih virov na to temo, zato sem jo želela bolj raziskat. 
+Zaključim lahko, da veljamo Slovenci za pozitiven narod, življenjska raven pa se nam vsako leto veča.
 

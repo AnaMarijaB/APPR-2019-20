@@ -194,6 +194,20 @@ uvozi.poraba <- function() {
 PORABA <- uvozi.poraba()
 
 
+#Shiny
+
+uvozi.dostopnost <- function() {
+  dostopnost_spol_starost <- read_csv2("podatki/dostopnost.csv", skip=2,
+                                         locale=locale(encoding='Windows-1250'))
+  colnames(dostopnost_spol_starost)<-c('SPOL','STAROST','DOBRINA','LETO','MERITVE','VREDNOST')
+  
+  dostopnost_spol_starost <- dostopnost_spol_starost %>% filter(MERITVE=='Da')
+  
+  return(dostopnost_spol_starost)
+  
+}
+
+DOSTOPNOST <- uvozi.dostopnost()
 
 
 

@@ -14,6 +14,14 @@ library(tmap)
 library(plotly)
 
 
+library(reshape2)
+library(dygraphs)
+library(xts)
+library(tidyverse)
+library(lubridate)
+library(zoo)
+
+
 
 
 # Uvozimo funkcije za pobiranje in uvoz zemljevida.
