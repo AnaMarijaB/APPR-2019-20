@@ -37,7 +37,7 @@ Analizirala sem podatke od leta 2013 do 2018. Podatke sem pobrala iz [Sursa](htt
 
 # Obdelava, uvoz in čiščenje podatkov
 
-```{r uvoz, echo=FALSE, message=FALSE}
+```{r uvoz, echo=FALSE, message=FALSE,warning=FALSE}
 source("uvoz/uvoz.r", encoding="UTF-8")
 ```
 

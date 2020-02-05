@@ -68,7 +68,7 @@ graf_zdravje <- plot_ly(zdravstvo_dohodek, x = ~2013:2018, y = ~prvi_kvintil2$vr
   add_trace(y = ~tretji_kvintil2$vrednost, name = '3.kvintil', marker = list(color = 'rgb(131,46,88)')) %>%
   add_trace(y = ~cetrti_kvintil2$vrednost, name = '4.kvintil', marker = list(color = 'rgb(121,23,73)')) %>%
   add_trace(y = ~peti_kvintil2$vrednost, name = '5.kvintil', marker = list(color = 'rgb(102,0,51)')) %>%
-  layout(title = 'PROCENT LJUDI PO DOHODKU, KI SO SVOJE ZDRAVJE OCENILI Z DOBRO ali ZELO DOBRO',
+  layout(title = 'PROCENT LJUDI PO DOHODKU, KI SO SVOJE ZDRAVJE OZNAČILI KOT ZELO DOBRO',
          xaxis = list(title = "", tickangle = -45),
          yaxis = list(title = ""),
          margin = list(b = 100),
@@ -77,9 +77,11 @@ graf_zdravje <- plot_ly(zdravstvo_dohodek, x = ~2013:2018, y = ~prvi_kvintil2$vr
 #graf: zadovoljstvo z šivljenjem po starosti
 graf_starost <- ggplot((data = zadovoljstvo_starost), aes(x= as.numeric(leto), y=vrednost, col=STAROST)) + geom_point() + geom_line() +
   scale_x_continuous('leto', breaks = seq(2013, 2018, 1), limits = c(2013,2018)) +
-  ggtitle('PROCENT LJUDI PO STAROSTI, KI SO SVOJO SREČO OZNAČILI VEČ KOT 8')
+  ggtitle('PROCENT LJUDI PO STAROSTI, KI SO SVOJO SREČO OZNAČILI VEČ KOT 8')+
+  theme(plot.title = element_text(size = 8, face = "bold"))
 
 #GRAF: ocena zdravstvenega stanja po starosti
 graf_zdravstvo <- ggplot((data = zdravstvo_starost), aes(x= as.numeric(leto), y=vrednost, col=STAROST)) + geom_point() + geom_line() +
   scale_x_continuous('leto', breaks = seq(2013, 2018, 1), limits = c(2013,2018)) +
-  ggtitle('PROCENT LJUDI PO STAROSTI, KI SO SVOJE ZDRAVJE OCENILI Z ZELO DOBRO')
+  ggtitle('PROCENT LJUDI PO STAROSTI, KI SO SVOJE ZDRAVJE OCENILI Z ZELO DOBRO')+
+  theme(plot.title = element_text(size = 8, face = "bold"))
